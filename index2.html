@@ -27,26 +27,36 @@
   <body style="margin: 0px; overflow: hidden">
     <a-scene embedded arjs="trackingMethod: best;">
       <a-marker preset="hiro">
-        <a-entity
-        material="color: red"
-        geometry="primitive: cylinder"
-        gps-new-entity-place="latitude: 41.79426840545261; longitude: 20.891423294840266"
-        scale="1 2 1"
-        ></a-entity>
+        <a-torus 
+        position="0 0.5 0" 
+        radius="0.3" 
+        radius-tubular="0.1" 
+        color="purple" 
+        rotation="0 45 45"
+        scale="1 1 1">
+      </a-torus>
+      
+      
 
-      <a-entity
-        material="color: red"
-        geometry="primitive: torusKnot"
-        gps-new-entity-place="latitude: 41.79426008224542; longitude: 20.89144163562666"
-        scale="1 1 1"
-        ></a-entity>
+      <a-ring 
+      position="1 0.5 0" 
+      radius-inner="0.2" 
+      radius-outer="0.4" 
+      color="orange" 
+      rotation="0 45 0"
+      scale="1 1 1">
+    </a-ring>
+    
+    
 
-        <a-entity
-        material="color: red"
-        geometry="primitive: dodecahedron"
-        gps-new-entity-place="latitude: 41.79426364933434; longitude: 20.89140415662837"
-        scale="1 1 1"
-      ></a-entity>
+    <a-dodecahedron 
+    position="-1 0.5 0" 
+    radius="0.25" 
+    color="pink"
+    rotation="0 45 45"
+    scale="1 1 1">
+  </a-dodecahedron>
+  
   
       </a-marker>
 
